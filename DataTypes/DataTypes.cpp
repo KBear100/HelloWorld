@@ -3,21 +3,16 @@
 
 using namespace std;
 
-namespace gamett 
-{
-    int i = 10;
-}
-
 int main()
 {
     string name;
     char initial;
-    unsigned int age;
+    unsigned short age;
     bool isAdult = 0;
     unsigned int zipcode;
     float wage;
-    int daysWorked;
-    int hoursWorkedPerDay[6];
+    unsigned short daysWorked;
+    unsigned short hoursWorkedPerDay[7];
 
     const float TAX = 0.1f;
     int totalHours = 0;
@@ -33,7 +28,7 @@ int main()
     cout << "Enter Age: ";
     cin >> age;
 
-    if (age >> 18) isAdult = true;
+    if (age >= 18) isAdult = true;
 
     cout << "Enter Zipcode: ";
     cin >> zipcode;
